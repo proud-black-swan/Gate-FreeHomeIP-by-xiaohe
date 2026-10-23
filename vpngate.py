@@ -225,7 +225,7 @@ def fetch_optimal_api_endpoints(api_urls_str):
     urls = [u.strip() for u in api_urls_str.split(",") if u.strip()]
     for url in urls:
         try:
-            log("OPTIMAL API", f"请求优选 API: {url}")
+            log("OPTIMAL API", "正在请求优选 API...")
             resp = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
             if resp.status_code == 200:
                 lines = resp.text.strip().splitlines()
