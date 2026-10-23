@@ -92,7 +92,7 @@ EDGE_HOSTS = [
 ]
 
 # 优选 API 地址配置 (支持逗号分隔多个，可配置在 GitHub Action Secret / Env 中)
-OPTIMAL_API = os.environ.get("OPTIMAL_API", "https://cf.090227.xyz/ct?ips=6&port=443")
+OPTIMAL_API = os.environ.get("OPTIMAL_API", "")  # 原本内置的优选API，还原就放到冒号中间 https://cf.090227.xyz/ct?ips=6&port=443
 
 NODES_URL = os.environ.get("NODES_URL", "https://proud-black-swan.github.io/Gate-FreeHomeIP-by-xiaohe/nodes.txt")
 
