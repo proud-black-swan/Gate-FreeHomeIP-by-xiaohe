@@ -41,7 +41,7 @@ VPNGATE_MIRROR = os.environ.get(
     "VPNGATE_MIRROR",
     "https://raw.githubusercontent.com/fdciabdul/Vpngate-Scraper-API/main/json/data.json",
 )
-CHECK_WORKER: ${{ secrets.DOMAIN }}
+WORKER_CHECK_URL = os.environ.get("CHECK_WORKER", "https://cf-workers-checksocks5-by-cm.0-0-0.ccwu.cccf-workers-checksocks5-by-cm.0-0-0.ccwu.cc/check?sstp=vpn:vpn@")
 CONCURRENCY = max(1, int(os.environ.get("CHECK_CONCURRENCY", "32")))
 CHECK_TIMEOUT = float(os.environ.get("CHECK_TIMEOUT", "90"))
 MAX_CHECK_NODES = int(os.environ.get("MAX_CHECK_NODES", "0"))
@@ -93,9 +93,9 @@ EDGE_HOSTS = [
 ]
 
 # 优选 API 地址配置 (支持逗号分隔多个，可配置在 GitHub Action Secret / Env 中)
-OPTIMAL_API = os.environ.get("OPTIMAL_API", "https://cloud-txt.hte.dpdns.org/PBS-API/api")
+OPTIMAL_API = os.environ.get("OPTIMAL_API", "https://cf.090227.xyz/ct?ips=6&port=443")
 
-NODES_URL = os.environ.get("NODES_URL", "https://proud-black-swan.github.io/GateFreeHomeIPbyxiaohe/nodes.txt")
+NODES_URL = os.environ.get("NODES_URL", "https://proud-black-swan.github.io/Gate-FreeHomeIP-by-xiaohe/nodes.txt")
 
 # ---------------------------------------------------------------------------
 # 日志
