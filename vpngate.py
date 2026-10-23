@@ -408,7 +408,7 @@ def build_outputs(results, raw_count, sstp_count, source):
     data = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"),
         "source": source,
-        "worker": WORKER_CHECK_URL,
+        "worker": "自建 cf-workers-checksocks5 测试",
         "stats": stats,
         "countries": by_country,
         "available": available,
