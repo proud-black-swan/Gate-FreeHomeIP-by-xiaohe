@@ -95,7 +95,7 @@ EDGE_HOSTS = [
 # 优选 API 地址配置 (支持逗号分隔多个，可配置在 GitHub Action Secret / Env 中)
 OPTIMAL_API = os.environ.get("OPTIMAL_API", "https://cloud-txt.hte.dpdns.org/PBS-API/api")
 
-NODES_URL = os.environ.get("NODES_URL", "https://proud-black-swan.github.io/Gate-FreeHomeIP-by-xiaohe/nodes.txt")
+NODES_URL = os.environ.get("NODES_URL", "https://proud-black-swan.github.io/GateFreeHomeIPbyxiaohe/nodes.txt")
 
 # ---------------------------------------------------------------------------
 # 日志
